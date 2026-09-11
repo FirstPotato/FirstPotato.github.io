@@ -1,13 +1,16 @@
-const CACHE = "timetable-2026-v3";
+const CACHE = "timetable-2026-v4";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icon-180.png",
   "./icon-192.png",
-  "./icon-512.png",
-  "./timetable.ics"
+  "./icon-512.png"
 ];
+
+function isLiveData(url) {
+  return url.pathname.endsWith("/timetable.json") || url.pathname.endsWith("/timetable.ics");
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -25,6 +28,19 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  const url = new URL(event.request.url);
+  if (isLiveData(url)) {
+    event.respondWith(
+      fetch(event.request)
+        .then((res) => {
+          const copy = res.clone();
+          caches.open(CACHE).then((cache) => cache.put(event.request, copy));
+          return res;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;

@@ -94,8 +94,9 @@
   "termMonday": "2026-09-07",
   "notes": [
     "第2周从 2026-09-07 开始",
-    "不含《地学文献检索与利用》",
-    "学术道德 9月16日停课，10月28日（第9周周三）顺延补课"
+    "地学文献：9月18日前交考核题目给课代表（不排上课时间）",
+    "学术道德 9月16日停课，10月28日（第9周周三）顺延补课",
+    "9月16日晚19:00 研究生会招新双选会，A座A316"
   ],
   "weekdayNames": [
     "周一",
@@ -181,6 +182,21 @@
     },
     {
       "week": 3,
+      "date": "2026-09-16",
+      "weekday": "周三",
+      "weekdayIndex": 3,
+      "period": "晚上19:00",
+      "course": "研究生会招新双选会",
+      "shortName": "招新双选会",
+      "location": "地理资源所A座A316会议室",
+      "note": "一次性活动",
+      "color": "#ec4899",
+      "kind": "event",
+      "start": "19:00",
+      "end": "21:00"
+    },
+    {
+      "week": 3,
       "date": "2026-09-17",
       "weekday": "周四",
       "weekdayIndex": 4,
@@ -190,6 +206,19 @@
       "location": "A0214会议室",
       "note": "",
       "color": "#8b5cf6"
+    },
+    {
+      "week": 3,
+      "date": "2026-09-18",
+      "weekday": "周五",
+      "weekdayIndex": 5,
+      "period": "截止",
+      "course": "地学文献检索与利用",
+      "shortName": "文献考核交题",
+      "location": "交给课代表",
+      "note": "9月18日前交考核题目",
+      "color": "#f97316",
+      "kind": "deadline"
     },
     {
       "week": 3,
@@ -1142,6 +1171,26 @@
       "weeks": "3、13–18",
       "note": "",
       "color": "#8b5cf6"
+    },
+    {
+      "course": "研究生会招新双选会",
+      "shortName": "招新双选会",
+      "weekday": "周三",
+      "period": "晚上19:00",
+      "location": "地理资源所A座A316会议室",
+      "weeks": "3",
+      "note": "一次性活动，9月16日",
+      "color": "#ec4899"
+    },
+    {
+      "course": "地学文献检索与利用",
+      "shortName": "文献考核交题",
+      "weekday": "周五",
+      "period": "截止",
+      "location": "交给课代表",
+      "weeks": "3",
+      "note": "9月18日前交考核题目，非上课",
+      "color": "#f97316"
     }
   ]
 }</script>
@@ -1176,7 +1225,7 @@
       fmtDate(todayIso) + " · " + WEEKDAYS[(today.getDay()+6)%7] +
       (currentWeek >= DATA.weekStart && currentWeek <= DATA.weekEnd ? " · 第" + currentWeek + "周" : " · 不在上课周");
     document.getElementById("notices").textContent = (DATA.notes || []).filter(function (n) {
-      return n.indexOf("停课") >= 0 || n.indexOf("顺延") >= 0;
+      return n.indexOf("停课") >= 0 || n.indexOf("顺延") >= 0 || n.indexOf("双选") >= 0 || n.indexOf("交考核") >= 0;
     }).join(" · ");
 
     function sessionsOn(dateIso) { return DATA.sessions.filter(s => s.date === dateIso); }

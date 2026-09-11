@@ -26,23 +26,40 @@ def write_ics(data: dict, dest: Path) -> None:
     ]
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     for i, session in enumerate(data["sessions"], 1):
-        day = session["date"].replace("-", "")
-        nxt = (datetime.strptime(session["date"], "%Y-%m-%d") + timedelta(days=1)).strftime("%Y%m%d")
         summary = f"{session['shortName']} {session['period']}"
         desc = ics_escape(session["course"])
         if session.get("note"):
             desc += "\\n" + ics_escape(session["note"])
-        lines += [
+        uid = ics_escape(f"timetable-{session['date']}-{session['shortName']}-{session['period']}-{i}@local")
+        event = [
             "BEGIN:VEVENT",
-            f"UID:timetable-{session['date']}-{i}@local",
+            f"UID:{uid}",
             f"DTSTAMP:{stamp}",
-            f"DTSTART;VALUE=DATE:{day}",
-            f"DTEND;VALUE=DATE:{nxt}",
+        ]
+        if session.get("start"):
+            def beijing_to_utc(date: str, hm: str) -> str:
+                hour, minute = (int(p) for p in hm.split(":")[:2])
+                local = datetime.strptime(date, "%Y-%m-%d").replace(hour=hour, minute=minute)
+                return (local - timedelta(hours=8)).strftime("%Y%m%dT%H%M%SZ")
+            end = session.get("end") or session["start"]
+            event += [
+                f"DTSTART:{beijing_to_utc(session['date'], session['start'])}",
+                f"DTEND:{beijing_to_utc(session['date'], end)}",
+            ]
+        else:
+            day = session["date"].replace("-", "")
+            nxt = (datetime.strptime(session["date"], "%Y-%m-%d") + timedelta(days=1)).strftime("%Y%m%d")
+            event += [
+                f"DTSTART;VALUE=DATE:{day}",
+                f"DTEND;VALUE=DATE:{nxt}",
+            ]
+        event += [
             f"SUMMARY:{ics_escape(summary)}",
             f"LOCATION:{ics_escape(session.get('location') or '')}",
             f"DESCRIPTION:{desc}",
             "END:VEVENT",
         ]
+        lines += event
     lines.append("END:VCALENDAR")
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes("\r\n".join(lines).encode("utf-8"))

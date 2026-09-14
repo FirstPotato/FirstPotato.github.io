@@ -9,7 +9,9 @@
     "第2周从 2026-09-07 开始",
     "地学文献：9月18日前交考核题目给课代表（不排上课时间）",
     "学术道德 9月16日停课，10月28日（第9周周三）顺延补课",
-    "9月16日晚19:00 研究生会招新双选会，A座A316"
+    "9月16日 15:00 顺义劳动仲裁2楼签字；晚19:00 招新双选会 A座A316",
+    "生态概论：第5周周二取消，第6周周四（10月8日）上课",
+    "教学楼节次已按官方钟点换算；所级 2–4 节为 09:20–12:00"
   ],
   "weekdayNames": [
     "周一",
@@ -31,7 +33,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 2,
@@ -43,7 +47,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 2,
@@ -55,7 +61,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 3,
@@ -67,7 +75,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 3,
@@ -79,7 +89,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "温学发",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 3,
@@ -91,7 +104,24 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
+    },
+    {
+      "week": 3,
+      "date": "2026-09-16",
+      "weekday": "周三",
+      "weekdayIndex": 3,
+      "period": "下午15:00",
+      "course": "劳动仲裁签字",
+      "shortName": "劳动仲裁",
+      "location": "顺义劳动仲裁2楼",
+      "note": "一次性事务，本周三下午",
+      "color": "#be123c",
+      "kind": "event",
+      "start": "15:00",
+      "end": "16:00"
     },
     {
       "week": 3,
@@ -118,7 +148,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "马泽清",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 3,
@@ -143,7 +176,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "特殊周末课程",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 4,
@@ -155,7 +190,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 4,
@@ -167,7 +204,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 4,
@@ -179,7 +218,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "9月16日停课后恢复上课",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 5,
@@ -191,19 +232,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
-    },
-    {
-      "week": 5,
-      "date": "2026-09-29",
-      "weekday": "周二",
-      "weekdayIndex": 2,
-      "period": "2–4节",
-      "course": "生态系统生态学概论",
-      "shortName": "生态概论",
-      "location": "A0214会议室",
-      "note": "",
-      "color": "#8b5cf6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 5,
@@ -215,7 +246,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 5,
@@ -227,7 +260,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 6,
@@ -239,7 +274,24 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
+    },
+    {
+      "week": 6,
+      "date": "2026-10-08",
+      "weekday": "周四",
+      "weekdayIndex": 4,
+      "period": "2–4节",
+      "course": "生态系统生态学概论",
+      "shortName": "生态概论",
+      "location": "A0214会议室",
+      "note": "原第5周周二课改到本周",
+      "color": "#8b5cf6",
+      "teacher": "张心昱",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 6,
@@ -251,7 +303,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 6,
@@ -263,7 +317,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "特殊周末课程",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 7,
@@ -275,7 +331,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "程维明",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 7,
@@ -287,7 +346,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 7,
@@ -299,7 +360,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 7,
@@ -311,7 +374,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "裴韬",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 7,
@@ -323,7 +389,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 7,
@@ -335,7 +403,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 7,
@@ -347,7 +417,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "陆锋",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 8,
@@ -359,7 +432,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 8,
@@ -371,7 +446,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 8,
@@ -383,7 +460,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 8,
@@ -395,7 +474,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 9,
@@ -407,7 +488,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "马廷",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 9,
@@ -419,7 +503,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 9,
@@ -431,7 +517,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 9,
@@ -443,7 +531,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "王英杰",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 9,
@@ -455,7 +546,9 @@
       "shortName": "学术道德",
       "location": "教学楼S201",
       "note": "9月16日停课顺延补课",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "week": 9,
@@ -467,7 +560,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 9,
@@ -479,7 +574,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "杨晓梅",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 10,
@@ -491,7 +589,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "杜云艳",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 10,
@@ -503,7 +604,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 10,
@@ -515,7 +618,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 10,
@@ -527,7 +632,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "杜云艳",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 10,
@@ -539,7 +647,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 10,
@@ -551,7 +661,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "唐荣林",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 11,
@@ -563,7 +676,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "赵罡",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 11,
@@ -575,7 +691,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 11,
@@ -587,7 +705,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 11,
@@ -599,7 +719,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "苏奋振",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 11,
@@ -611,7 +734,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 11,
@@ -623,7 +748,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "葛咏",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 12,
@@ -635,7 +763,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "王江浩",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 12,
@@ -647,7 +778,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 12,
@@ -659,7 +792,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 12,
@@ -671,7 +806,10 @@
       "shortName": "地信前沿",
       "location": "A0214会议室",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "teacher": "王劲峰",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 12,
@@ -683,7 +821,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 13,
@@ -695,7 +835,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 13,
@@ -707,7 +849,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "贾小旭",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 13,
@@ -719,7 +864,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 13,
@@ -731,7 +878,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "李发东",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 13,
@@ -743,7 +893,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 14,
@@ -755,7 +907,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 14,
@@ -767,7 +921,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "付晓莉",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 14,
@@ -779,7 +936,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 14,
@@ -791,7 +950,9 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 14,
@@ -803,7 +964,9 @@
       "shortName": "当代马列",
       "location": "教学楼S201",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "week": 15,
@@ -815,7 +978,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 15,
@@ -827,7 +992,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "李胜功",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 15,
@@ -839,7 +1007,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 15,
@@ -851,7 +1021,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "艾治频",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 16,
@@ -863,7 +1036,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 16,
@@ -875,7 +1050,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "寇亮",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 16,
@@ -887,7 +1065,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 16,
@@ -899,7 +1079,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "王绍强",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 17,
@@ -911,7 +1094,9 @@
       "shortName": "英语听说",
       "location": "教学楼N408",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "week": 17,
@@ -923,7 +1108,9 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 17,
@@ -935,7 +1122,9 @@
       "shortName": "英语写作",
       "location": "教学楼N306",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "week": 17,
@@ -947,7 +1136,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "陈智",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 18,
@@ -959,7 +1151,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "石培礼",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "week": 18,
@@ -971,7 +1166,10 @@
       "shortName": "生态概论",
       "location": "A0214会议室",
       "note": "",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "teacher": "罗毅",
+      "start": "09:20",
+      "end": "12:00"
     }
   ],
   "courses": [
@@ -983,7 +1181,9 @@
       "location": "教学楼N408",
       "weeks": "2–17",
       "note": "",
-      "color": "#3b82f6"
+      "color": "#3b82f6",
+      "start": "13:30",
+      "end": "15:05"
     },
     {
       "course": "英语B-191班（中）-高级写作",
@@ -993,7 +1193,9 @@
       "location": "教学楼N306",
       "weeks": "2–5、7–17",
       "note": "",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "course": "英语B-191班（中）-高级写作",
@@ -1003,7 +1205,9 @@
       "location": "教学楼N306",
       "weeks": "3",
       "note": "特殊加课",
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "start": "15:25",
+      "end": "17:00"
     },
     {
       "course": "学术道德与学术写作规范",
@@ -1013,7 +1217,9 @@
       "location": "教学楼S201",
       "weeks": "2、4–5、7–9",
       "note": "9月16日停课，第9周周三顺延补课",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "course": "学术道德与学术写作规范",
@@ -1023,7 +1229,9 @@
       "location": "教学楼S201",
       "weeks": "6",
       "note": "特殊加课",
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "start": "13:30",
+      "end": "16:10"
     },
     {
       "course": "中国马克思主义与当代",
@@ -1033,7 +1241,9 @@
       "location": "教学楼S201",
       "weeks": "6–14",
       "note": "",
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "start": "13:30",
+      "end": "17:00"
     },
     {
       "course": "地球信息科学前沿",
@@ -1043,7 +1253,9 @@
       "location": "A0214会议室",
       "weeks": "7、9–12",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "course": "地球信息科学前沿",
@@ -1053,7 +1265,9 @@
       "location": "A0214会议室",
       "weeks": "7、9–12",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "course": "地球信息科学前沿",
@@ -1063,7 +1277,9 @@
       "location": "A0214会议室",
       "weeks": "7、9–11",
       "note": "",
-      "color": "#22c55e"
+      "color": "#22c55e",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "course": "生态系统生态学概论",
@@ -1071,9 +1287,11 @@
       "weekday": "周二",
       "period": "2–4节",
       "location": "A0214会议室",
-      "weeks": "3、5、13–18",
-      "note": "",
-      "color": "#8b5cf6"
+      "weeks": "3、13–18",
+      "note": "第5周周二已取消",
+      "color": "#8b5cf6",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "course": "生态系统生态学概论",
@@ -1081,9 +1299,11 @@
       "weekday": "周四",
       "period": "2–4节",
       "location": "A0214会议室",
-      "weeks": "3、13–18",
-      "note": "",
-      "color": "#8b5cf6"
+      "weeks": "3、6、13–18",
+      "note": "含第6周周四（10月8日）",
+      "color": "#8b5cf6",
+      "start": "09:20",
+      "end": "12:00"
     },
     {
       "course": "研究生会招新双选会",
@@ -1104,6 +1324,72 @@
       "weeks": "3",
       "note": "9月18日前交考核题目，非上课",
       "color": "#f97316"
+    },
+    {
+      "course": "劳动仲裁签字",
+      "shortName": "劳动仲裁",
+      "weekday": "周三",
+      "period": "下午15:00",
+      "location": "顺义劳动仲裁2楼",
+      "weeks": "3",
+      "note": "一次性事务，9月16日 15:00",
+      "color": "#be123c",
+      "start": "15:00",
+      "end": "16:00"
     }
-  ]
+  ],
+  "periodClocks": {
+    "1": {
+      "start": "08:30",
+      "end": "09:15"
+    },
+    "2": {
+      "start": "09:20",
+      "end": "10:05"
+    },
+    "3": {
+      "start": "10:25",
+      "end": "11:10"
+    },
+    "4": {
+      "start": "11:15",
+      "end": "12:00"
+    },
+    "5": {
+      "start": "13:30",
+      "end": "14:15"
+    },
+    "6": {
+      "start": "14:20",
+      "end": "15:05"
+    },
+    "7": {
+      "start": "15:25",
+      "end": "16:10"
+    },
+    "8": {
+      "start": "16:15",
+      "end": "17:00"
+    },
+    "9": {
+      "start": "17:05",
+      "end": "17:50"
+    },
+    "10": {
+      "start": "18:30",
+      "end": "19:15"
+    },
+    "11": {
+      "start": "19:20",
+      "end": "20:05"
+    },
+    "12": {
+      "start": "20:15",
+      "end": "21:00"
+    },
+    "13": {
+      "start": "21:05",
+      "end": "21:50"
+    }
+  }
 }

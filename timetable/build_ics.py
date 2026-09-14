@@ -25,12 +25,19 @@ def write_ics(data: dict, dest: Path) -> None:
         "X-WR-TIMEZONE:Asia/Shanghai",
     ]
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    for i, session in enumerate(data["sessions"], 1):
-        summary = f"{session['shortName']} {session['period']}"
+    for session in data["sessions"]:
+        clock = ""
+        if session.get("start") and session.get("end"):
+            clock = f" {session['start']}–{session['end']}"
+        summary = f"{session['shortName']} {session['period']}{clock}"
         desc = ics_escape(session["course"])
+        if session.get("teacher"):
+            desc += "\\n教师：" + ics_escape(session["teacher"])
         if session.get("note"):
             desc += "\\n" + ics_escape(session["note"])
-        uid = ics_escape(f"timetable-{session['date']}-{session['shortName']}-{session['period']}-{i}@local")
+        uid = ics_escape(
+            f"timetable-{session['date']}-{session['shortName']}-{session['period']}@local"
+        )
         event = [
             "BEGIN:VEVENT",
             f"UID:{uid}",

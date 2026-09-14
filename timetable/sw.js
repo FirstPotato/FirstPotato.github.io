@@ -1,4 +1,4 @@
-const CACHE = "timetable-2026-v5";
+const CACHE = "timetable-2026-v6";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,6 +10,15 @@ const ASSETS = [
 
 function isLiveData(url) {
   return url.pathname.endsWith("/timetable.json") || url.pathname.endsWith("/timetable.ics");
+}
+
+function isLiveShell(url) {
+  const path = url.pathname;
+  return (
+    path.endsWith("/") ||
+    path.endsWith("/index.html") ||
+    path.endsWith("/sw.js")
+  );
 }
 
 self.addEventListener("install", (event) => {
@@ -29,7 +38,7 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
-  if (isLiveData(url)) {
+  if (isLiveData(url) || isLiveShell(url)) {
     event.respondWith(
       fetch(event.request)
         .then((res) => {
@@ -37,7 +46,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE).then((cache) => cache.put(event.request, copy));
           return res;
         })
-        .catch(() => caches.match(event.request))
+        .catch(() => caches.match(event.request).then((cached) => cached || caches.match("./index.html")))
     );
     return;
   }

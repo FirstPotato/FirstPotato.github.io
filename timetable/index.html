@@ -58,6 +58,7 @@
     }
     .week-bar button.on { background: #1d4ed8; border-color: #1d4ed8; }
     .note { color: #fbbf24; font-size: 12px; margin-top: 6px; }
+    .clock-row { display: flex; justify-content: space-between; gap: 10px; color: var(--text); font-size: 14px; margin-top: 6px; font-variant-numeric: tabular-nums; }
     #notices { color: #fbbf24; }
     .ios-actions { margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.6; }
     .ios-actions a { color: var(--accent); }
@@ -1518,14 +1519,14 @@
     function sessionsInWeek(w) { return DATA.sessions.filter(s => s.week === w); }
 
     function card(s) {
-      const time = (s.start && s.end) ? `${s.start}–${s.end} · ` : "";
+      const clock = (s.start && s.end) ? `${s.start}–${s.end}` : "";
       const teacher = s.teacher ? ` · ${s.teacher}` : "";
       return `<article class="card" style="border-left: 5px solid ${s.color}">
         <div class="row">
           <div class="course">${s.shortName}</div>
-          <span class="pill" style="background:${s.color}">${s.period}</span>
+          <span class="pill" style="background:${s.color}">${clock || s.period}</span>
         </div>
-        <div class="meta">${time}${s.location}${teacher}<br>${s.course}</div>
+        <div class="meta">${clock ? s.period + " · " : ""}${s.location}${teacher}<br>${s.course}</div>
         ${s.note ? `<div class="note">${s.note}</div>` : ""}
       </article>`;
     }
@@ -1573,8 +1574,18 @@
       DATA.courses.forEach(c => {
         (groups[c.shortName] ||= []).push(c);
       });
+      const clocks = DATA.periodClocks || {};
+      const clockNums = Object.keys(clocks).sort((a, b) => Number(a) - Number(b));
+      const periodTable = clockNums.length ? `<article class="card">
+        <div class="course">教学楼节次时间</div>
+        <div class="meta">所级课 2–4 节为 09:20–12:00</div>
+        ${clockNums.map(n => {
+          const label = n === "9" ? "9（机动）节" : n + "节";
+          return `<div class="clock-row"><span>${label}</span><span>${clocks[n].start}–${clocks[n].end}</span></div>`;
+        }).join("")}
+      </article>` : "";
       const el = document.getElementById("page-courses");
-      el.innerHTML = Object.keys(groups).map(name => {
+      el.innerHTML = periodTable + Object.keys(groups).map(name => {
         const items = groups[name];
         const color = items[0].color;
         const rows = items.map(c =>
@@ -1602,7 +1613,7 @@
     });
     }
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" });
+      navigator.serviceWorker.register("./sw.js?v=6", { updateViaCache: "none" });
     }
     (async function () {
       var data = null;

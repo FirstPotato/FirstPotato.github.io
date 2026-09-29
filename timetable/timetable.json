@@ -14,7 +14,8 @@
     "教学楼节次已按官方钟点换算；所级 2–4 节为 09:20–12:00",
     "英语听说：10月12日、11月23日听力测试（两次共4分）。11月23日（第12次课）布置口试，12月14日与12月21日（第15–16次课）展示（6分）。12月21日为最后一次听说课",
     "英语听说10月5日（第6周周一）在国庆假期。课表仍排课；若停课，第12次及以后的课次前移",
-    "英语写作补课：10月31日（第9周周六）18:10–19:50，教室313。补10月6日国庆停的那次。老师只说了313，楼号没写"
+    "英语写作补课：10月31日（第9周周六）18:10–19:50，教室313。补10月6日国庆停的那次。老师只说了313，楼号没写",
+    "英语写作第一次作业：举例文，至少250词，题为 Self-education is the hardest work. 初稿是9月29日当堂说的 before class next week；10月6日无课，按下一次写作课记为10月13日15:25前。修改截止11月3日。成绩会晚给"
   ],
   "weekdayNames": [
     "周一",
@@ -375,10 +376,23 @@
       "course": "英语B-191班（中）-高级写作",
       "shortName": "英语写作",
       "location": "教学楼N306",
-      "note": "",
+      "note": "第一次作业初稿：课前交",
       "color": "#14b8a6",
       "start": "15:25",
       "end": "17:00"
+    },
+    {
+      "week": 7,
+      "date": "2026-10-13",
+      "weekday": "周二",
+      "weekdayIndex": 2,
+      "period": "课前",
+      "course": "英语B写作第一次作业",
+      "shortName": "写作初稿",
+      "location": "教学楼N306",
+      "note": "举例文，至少250词。题：Self-education is the hardest work. 幻灯片写 before class next week；10月6日无课，所以记在下一次写作课前",
+      "color": "#0f766e",
+      "kind": "deadline"
     },
     {
       "week": 7,
@@ -643,11 +657,24 @@
       "date": "2026-11-03",
       "weekday": "周二",
       "weekdayIndex": 2,
+      "period": "课前",
+      "course": "英语B写作第一次作业",
+      "shortName": "写作修改",
+      "location": "教学楼N306",
+      "note": "幻灯片写 November 3rd，deadline for revisions。当天写作课15:25开始",
+      "color": "#0f766e",
+      "kind": "deadline"
+    },
+    {
+      "week": 10,
+      "date": "2026-11-03",
+      "weekday": "周二",
+      "weekdayIndex": 2,
       "period": "7–8节",
       "course": "英语B-191班（中）-高级写作",
       "shortName": "英语写作",
       "location": "教学楼N306",
-      "note": "",
+      "note": "第一次作业修改截止",
       "color": "#14b8a6",
       "start": "15:25",
       "end": "17:00"

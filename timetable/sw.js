@@ -1,4 +1,4 @@
-const CACHE = "timetable-2026-v9";
+const CACHE = "timetable-2026-v10";
 const ASSETS = [
   "./",
   "./index.html",

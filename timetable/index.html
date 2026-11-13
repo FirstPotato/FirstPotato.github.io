@@ -97,6 +97,7 @@
     "第2周从 2026-09-07 开始",
     "教学楼节次已按官方钟点换算；所级 2–4 节为 09:20–12:00",
     "城大联培：11月17日（第12周周二）14:30，中关村校区教学楼一层S101。国科大邮箱扫海报二维码报名。当天英语写作15:25，可能冲突",
+    "地信前沿思考题：任选一位老师题目完成，按“选题老师-学号-姓名”发至 yulianliu2023@163.com。已授课老师题目11月18日前提交；王江浩/王劲峰老师题目11月25日前提交（葛咏不留题；马廷/唐荣林/赵罡暂未留题）",
     "劳动仲裁：11月10日已开庭（案号9306）。11月底前确认裁决书送达及对方起诉情况",
     "英语听说：11月23日听力测试及布置口试，12月14日与12月21日（第15–16次课）展示（6分）。12月21日为最后一次听说课",
     "新班委信息填报：各班级换届后尽快填报新班委信息统计，务必在12月22日（第17周周二）之前完成。来源：【新】2025地理所班级交流工作群群公告文档更新"
@@ -1083,6 +1084,19 @@
     },
     {
       "week": 12,
+      "date": "2026-11-18",
+      "weekday": "周三",
+      "weekdayIndex": 3,
+      "period": "11月18日前",
+      "course": "地信前沿思考题作业（已授课老师）",
+      "shortName": "地信作业截止",
+      "location": "邮箱 yulianliu2023@163.com",
+      "note": "任选一位老师题目，按“选题老师-学号-姓名”发至 yulianliu2023@163.com。选择目前已授课老师题目的同学此日前提交（马廷、唐荣林、赵罡暂未留题）",
+      "color": "#22c55e",
+      "kind": "deadline"
+    },
+    {
+      "week": 12,
       "date": "2026-11-19",
       "weekday": "周四",
       "weekdayIndex": 4,
@@ -1137,6 +1151,19 @@
       "color": "#14b8a6",
       "start": "15:25",
       "end": "17:00"
+    },
+    {
+      "week": 13,
+      "date": "2026-11-25",
+      "weekday": "周三",
+      "weekdayIndex": 3,
+      "period": "11月25日前",
+      "course": "地信前沿思考题作业（王江浩/王劲峰）",
+      "shortName": "地信作业截止",
+      "location": "邮箱 yulianliu2023@163.com",
+      "note": "选择王江浩老师、王劲峰老师思考题的同学此日前提交（葛咏老师不留思考题）。按“选题老师-学号-姓名”发至 yulianliu2023@163.com",
+      "color": "#22c55e",
+      "kind": "deadline"
     },
     {
       "week": 13,
@@ -1754,6 +1781,26 @@
       "weeks": "14",
       "note": "2026-11-30前。确认仲裁裁决书送达情况及对方是否提起诉讼（案号9306）",
       "color": "#be123c"
+    },
+    {
+      "course": "地信前沿思考题作业（已授课老师）",
+      "shortName": "地信作业截止",
+      "weekday": "周三",
+      "period": "11月18日前",
+      "location": "yulianliu2023@163.com",
+      "weeks": "12",
+      "note": "2026-11-18前。已授课老师思考题截止。任选一位老师，以“选题老师-学号-姓名”发至邮箱",
+      "color": "#22c55e"
+    },
+    {
+      "course": "地信前沿思考题作业（王江浩/王劲峰）",
+      "shortName": "地信作业截止",
+      "weekday": "周三",
+      "period": "11月25日前",
+      "location": "yulianliu2023@163.com",
+      "weeks": "13",
+      "note": "2026-11-25前。王江浩、王劲峰老师思考题截止。以“选题老师-学号-姓名”发至邮箱",
+      "color": "#22c55e"
     }
   ],
   "periodClocks": {
@@ -1842,7 +1889,7 @@
       fmtDate(todayIso) + " · " + WEEKDAYS[(today.getDay()+6)%7] +
       (currentWeek >= DATA.weekStart && currentWeek <= DATA.weekEnd ? " · 第" + currentWeek + "周" : " · 不在上课周");
     document.getElementById("notices").textContent = (DATA.notes || []).filter(function (n) {
-      return n.indexOf("城大") >= 0 || n.indexOf("联培") >= 0 || n.indexOf("仲裁") >= 0 || n.indexOf("听说") >= 0 || n.indexOf("班委") >= 0;
+      return n.indexOf("城大") >= 0 || n.indexOf("联培") >= 0 || n.indexOf("地信") >= 0 || n.indexOf("仲裁") >= 0 || n.indexOf("听说") >= 0 || n.indexOf("班委") >= 0;
     }).join(" · ");
 
     function sessionsOn(dateIso) { return DATA.sessions.filter(s => s.date === dateIso); }
@@ -1943,7 +1990,7 @@
     });
     }
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js?v=13", { updateViaCache: "none" });
+      navigator.serviceWorker.register("./sw.js?v=14", { updateViaCache: "none" });
     }
     (async function () {
       var data = null;
